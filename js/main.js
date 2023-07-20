@@ -79,16 +79,29 @@
 
 
     // Portfolio isotope and filter
+    // Initialize Isotope and store it in a variable
     var portfolioIsotope = $('.portfolio-container').isotope({
         itemSelector: '.portfolio-item',
         layoutMode: 'fitRows'
     });
+
+    // Handle click events on portfolio filters
     $('#portfolio-flters li').on('click', function () {
+        // Remove 'active' class from all filters
         $("#portfolio-flters li").removeClass('active');
+
+        // Add 'active' class to the clicked filter
         $(this).addClass('active');
 
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
+        // Get the filter value from 'data-filter' attribute of the clicked filter
+        var filterValue = $(this).data('filter');
+
+        // Filter the portfolio items based on the clicked filter
+        portfolioIsotope.isotope({ filter: filterValue });
     });
+
+    // By default, filter the portfolio items based on the 'active' filter
+    var activeFilter = $('#portfolio-flters li.active').data('filter');
+    portfolioIsotope.isotope({ filter: activeFilter });
     
 })(jQuery);
-
