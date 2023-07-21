@@ -534,6 +534,7 @@ h6,
     justify-content: center;
     color: var(--primary);
     background: var(--light);
+    border: 0;
     border-radius: 60px;
     font-size: 22px;
     transition: .5s;
@@ -543,7 +544,8 @@ h6,
 .testimonial-carousel .owl-nav .owl-next:hover {
     color: #FFFFFF;
     background: var(--primary);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    border: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .7);
 }
 
 
