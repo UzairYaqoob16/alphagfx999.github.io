@@ -1,12 +1,27 @@
+head, body{
+    margin: 0;
+    overflow-x: hidden;
+}
 /********** Template CSS **********/
 :root {
     --primary: #7f00ff;
     --secondary: #e100ff;
     --light: #F6F4F9;
-    --dark: #35373a;
+    --dark: #000;
 }
 
-
+p,li,a{
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: medium !important;
+}
+h4,h5{
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: bold !important;
+}
+h1,h2,h3{
+    font-weight: bolder !important;
+}
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -446,7 +461,8 @@ h6,
 
 #portfolio-flters li:hover,
 #portfolio-flters li.active {
-    color: var(--primary);
+    color: #fff !important;
+    background-color: #7f00ff !important;
 }
 
 .portfolio-item img, video {
