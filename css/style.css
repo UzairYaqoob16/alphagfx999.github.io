@@ -331,13 +331,35 @@ h6,
 .section-title.text-white span:last-child::after {
     background: #FFFFFF;
 }
-
-
+th.text-primary{
+    font-size: 2.5rem !important;
+}
+th.text-dark{
+    font-size: 1.25rem !important;
+    font-weight: 500;
+}
+table .py-5{
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important
+}
+.rates .pese{
+    color: #000 !important;
+    font-weight: bold !important;
+}
+.rates .pay{
+    color: #000 !important;
+    font-weight: 500 !important;
+}
 /*** Feature ***/
 .feature-item {
     transition: .5s;
 }
-
+.fa-check{
+    color: var(--primary) !important;
+}
+.fa-xmark{
+    color: rgb(255, 72, 72) !important;
+}
 .feature-item:hover{
     margin-top: -15px;
 }
@@ -345,7 +367,19 @@ h6,
     color: #FFFFFF !important;
     background-color: #7f00ff;
 }
-
+.package{
+    background-color: var(--light) !important;
+}
+.package h5{
+    color: #000 !important;
+}
+.package p{
+    color: grey !important;
+    font-weight: 400 !important;
+}
+.package.mb-4.text-center{
+    color: var(--dark) !important;
+}
 .fc{
     color: #3a0ba7 !important;
     padding: 15px;
@@ -447,7 +481,12 @@ h6,
 .service-item:hover a.btn {
     bottom: 0;
 }
-
+ li{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
   
 .social-link {
     box-shadow: inset 0 0 0 0 var(--primary) !important;

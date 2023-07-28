@@ -325,7 +325,7 @@ svg {
     vertical-align: middle
 }
 
-table {
+/* table {
     caption-side: bottom;
     border-collapse: collapse
 }
@@ -351,7 +351,7 @@ th {
     border-color: inherit;
     border-style: solid;
     border-width: 0
-}
+} */
 
 label {
     display: inline-block
@@ -2242,6 +2242,7 @@ progress {
 }
 
 .form-text {
+    transition: .3s;
     margin-top: .25rem;
     font-size: .875em;
     color: #6c757d
@@ -2254,18 +2255,19 @@ progress {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #726D7B;
-    background-color: #fff;
+    color: #595266;
+    background-color: #ebebeb;
     background-clip: padding-box;
-    border: 1px solid #ced4da;
     appearance: none;
-    border-radius: 10px;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+    box-shadow: rgba(149, 157, 165, 0.174) 0px 0px 24px;
+    border: none;
+    border-radius: 7px;
+    transition:0.5s
 }
 
 @media (prefers-reduced-motion: reduce) {
     .form-control {
-        transition: none
+        transition: .3s
     }
 }
 
@@ -2278,11 +2280,11 @@ progress {
 }
 
 .form-control:focus {
-    color: #726D7B;
-    background-color: #fff;
-    border-color: #b191e6;
-    outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(98, 34, 204, 0.25)
+    color: gray;
+    background-color: var(--light);
+    border-color: #e100ff !important;
+    outline: none;
+    transition: .3s;
 }
 
 .form-control::-webkit-date-and-time-value {
@@ -2290,12 +2292,14 @@ progress {
 }
 
 .form-control::placeholder {
+    transition: .3s;
     color: #6c757d;
     opacity: 1
 }
 
 .form-control:disabled,
 .form-control:read-only {
+    transition: .3s;
     background-color: #e9ecef;
     opacity: 1
 }
@@ -2312,7 +2316,7 @@ progress {
     border-width: 0;
     border-inline-end-width: 1px;
     border-radius: 0;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
+    transition: .3s
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2351,6 +2355,7 @@ progress {
 }
 
 .form-control-plaintext {
+    transition: .3s;
     display: block;
     width: 100%;
     padding: .375rem 0;
@@ -2365,7 +2370,8 @@ progress {
 .form-control-plaintext.form-control-sm,
 .form-control-plaintext.form-control-lg {
     padding-right: 0;
-    padding-left: 0
+    padding-left: 0;
+    transition: .3s;
 }
 
 .form-control-sm {
@@ -2407,7 +2413,10 @@ progress {
 }
 
 textarea.form-control {
-    min-height: calc(1.5em + .75rem + 2px)
+    min-height: calc(1.5em + .75rem + 2px);
+    transition: .5s;
+    border-radius: 7px;
+    transition: .3s;
 }
 
 textarea.form-control-sm {
@@ -2453,12 +2462,14 @@ textarea.form-control-lg {
     background-size: 16px 12px;
     border: 1px solid #ced4da;
     border-radius: 10px;
-    appearance: none
+    appearance: none;
+    transition: .3s;
 }
 
 .form-select:focus {
     border-color: #b191e6;
-    outline: 0;
+    outline: none;
+    transition: .3s;
     box-shadow: 0 0 0 .25rem rgba(98, 34, 204, 0.25)
 }
 
@@ -2530,9 +2541,7 @@ textarea.form-control-lg {
 }
 
 .form-check-input:focus {
-    border-color: #b191e6;
-    outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(98, 34, 204, 0.25)
+    border-color: var(--secondary) !important;
 }
 
 .form-check-input:checked {
@@ -2568,7 +2577,23 @@ textarea.form-control-lg {
 .form-switch {
     padding-left: 2.5em
 }
-
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+/* .col-form-label label{
+    position: absolute !important;
+    top: 50% !important;
+    left: 5px !important;
+    transform: translateY(-50%) !important;
+    color: var(--light) !important;
+    padding: 0 5px !important;
+    pointer-events: none !important;
+} */
+input[type=number] {
+    -moz-appearance: textfield !important;
+  }
 .form-switch .form-check-input {
     width: 2em;
     margin-left: -2.5em;
@@ -2760,12 +2785,14 @@ textarea.form-control-lg {
 .form-floating>.form-control:not(:placeholder-shown)~label,
 .form-floating>.form-select~label {
     opacity: .65;
-    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem)
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+    transition: .5s;
 }
 
 .form-floating>.form-control:-webkit-autofill~label {
     opacity: .65;
-    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem)
+    transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+    transition: .3s;
 }
 
 .input-group {
@@ -3004,6 +3031,7 @@ textarea.form-control.is-valid {
 
 .was-validated textarea.form-control:invalid,
 textarea.form-control.is-invalid {
+    transition: .3s;
     padding-right: calc(1.5em + .75rem);
     background-position: top calc(.375em + .1875rem) right calc(.375em + .1875rem)
 }
@@ -5954,7 +5982,7 @@ fieldset:disabled .btn {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    outline: 0
+    outline: 0;
 }
 
 .modal-dialog {
@@ -6057,7 +6085,7 @@ fieldset:disabled .btn {
 .modal-body {
     position: relative;
     flex: 1 1 auto;
-    padding: 1rem
+    padding: 1rem;
 }
 
 .modal-footer {
@@ -6657,14 +6685,16 @@ fieldset:disabled .btn {
         transition: none
     }
 }
-
+a, p, li, button:focus{
+    outline: none !important;
+}
 .carousel-control-prev:hover,
 .carousel-control-prev:focus,
 .carousel-control-next:hover,
 .carousel-control-next:focus {
     color: #fff;
     text-decoration: none;
-    outline: 0;
+    outline: none;
     opacity: .9
 }
 
