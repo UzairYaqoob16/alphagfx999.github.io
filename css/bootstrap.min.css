@@ -658,15 +658,23 @@ progress {
 .container-lg,
 .container-xl,
 .container-xxl {
+    overflow-x: hidden !important;
+    overflow-y: hidden;
     width: 100%;
     padding-right: var(--bs-gutter-x, .75rem);
     padding-left: var(--bs-gutter-x, .75rem);
     margin-right: auto;
     margin-left: auto
 }
-
+@media (max-width: 576px) {
+    th{
+        font-size: 0.5rem;
+    }
+}
 @media (min-width: 576px) {
-
+    th{
+        font-size: 0.5rem;
+    }
     .container,
     .container-sm {
         max-width: 540px
@@ -674,7 +682,9 @@ progress {
 }
 
 @media (min-width: 768px) {
-
+    th{
+        font-size: 1rem;
+    }
     .container,
     .container-sm,
     .container-md {
@@ -942,10 +952,11 @@ progress {
     --bs-gutter-y: 3rem
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     .col-sm {
         flex: 1 0 0%
     }
+
 
     .row-cols-sm-auto>* {
         flex: 0 0 auto;
@@ -1156,7 +1167,7 @@ progress {
     }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .col-md {
         flex: 1 0 0%
     }

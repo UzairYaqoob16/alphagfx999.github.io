@@ -1,7 +1,9 @@
-head, body{
+head,
+body {
     margin: 0;
     overflow-x: hidden;
 }
+
 /********** Template CSS **********/
 :root {
     --primary: #7f00ff;
@@ -10,19 +12,26 @@ head, body{
     --dark: #000;
 }
 
-p,li,a{
+p,
+li,
+a {
     font-family: 'Poppins', sans-serif !important;
     font-weight: 400 !important;
     font-size: medium !important;
 }
-h4,h5{
+
+h4,
+h5 {
     font-family: 'Poppins', sans-serif !important;
     font-weight: bold !important;
 }
-h1,h2{
+
+h1,
+h2 {
     font-weight: 700 !important;
     font-size: 2.7em !important;
 }
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -136,9 +145,13 @@ h6,
 }
 
 .navbar-light .navbar-brand img {
+    max-height: 50px !important;
+
+}
+
+.color {
     filter: grayscale(50) brightness(50);
-    max-height: 60px;
-    transition: .5s;
+
 }
 
 .sticky-top.navbar-light .navbar-brand img {
@@ -148,24 +161,34 @@ h6,
 
 @keyframes drifting {
     0% {
-      transform: translateY(5px);
+        transform: translateY(5px);
     }
-    50% {
-      transform: translateY(20px);
-    }
-    100% {
-      transform: translateY(5px);
-    }
-  }
 
-  .drifting {
-    animation: drifting 3s infinite linear;}
-   
+    50% {
+        transform: translateY(20px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+.drifting {
+    animation: drifting 3s infinite linear;
+}
+
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
-        position: relative;
-        transition: 0.5s;
-        background: #FFFFFF;
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 1020 !important;
+        position: relative !important;
+        transition: 0.5s !important;
+        background: #FFFFFF !important;
+    }
+
+    .color {
+        filter: none;
     }
 
     .navbar-light .navbar-collapse {
@@ -188,7 +211,6 @@ h6,
         max-height: 45px;
     }
 }
-
 
 /* .fc:hover{
     color: var(--light) !important;
@@ -331,62 +353,78 @@ h6,
 .section-title.text-white span:last-child::after {
     background: #FFFFFF;
 }
-th.text-primary{
+
+th.text-primary {
     font-size: 2.5rem !important;
 }
-th.text-dark{
+
+th.text-dark {
     font-size: 1.25rem !important;
     font-weight: 500;
 }
-table .py-5{
+
+table .py-5 {
     padding-top: 3rem !important;
     padding-bottom: 3rem !important
 }
-.rates .pese{
+
+.rates .pese {
     color: #000 !important;
     font-weight: bold !important;
 }
-.rates .pay{
+
+.rates .pay {
     color: #000 !important;
     font-weight: 500 !important;
 }
+
 /*** Feature ***/
 .feature-item {
     transition: .5s;
 }
-.fa-check{
+
+.fa-check {
     color: var(--primary) !important;
 }
-.fa-xmark{
+
+.fa-xmark {
     color: rgb(255, 72, 72) !important;
 }
-.feature-item:hover{
+
+.feature-item:hover {
     margin-top: -15px;
 }
-.feature-item:hover .fc{
+
+.feature-item:hover .fc {
     color: #FFFFFF !important;
     background-color: #7f00ff;
 }
-.package{
+
+.package {
     background-color: var(--light) !important;
 }
-.package h5{
+
+.package h5 {
     color: #000 !important;
 }
-.package p{
+
+.package p {
     color: grey !important;
     font-weight: 400 !important;
 }
-.package.mb-4.text-center{
+
+.package.mb-4.text-center {
     color: var(--dark) !important;
 }
-.fc{
+
+.fc {
     color: #3a0ba7 !important;
     padding: 15px;
     background: var(--light);
     transition: 0.5s;
-    border-radius: 81% 89% 68% 100% / 100% 100% 58% 80%  ;   
+    border-radius: 81% 89% 68% 100% / 100% 100% 58% 80%;
 }
+
 /*** About ***/
 .progress {
     height: 5px;
@@ -481,38 +519,41 @@ table .py-5{
 .service-item:hover a.btn {
     bottom: 0;
 }
- li{
+
+li {
     text-decoration: none;
     list-style: none;
     margin: 0;
     padding: 0;
- }
-  
+}
+
 .social-link {
     box-shadow: inset 0 0 0 0 var(--primary) !important;
     color: var(--light) !important;
     padding: 0 .25rem !important;
     margin: 0 -.25rem !important;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out,0.5s !important;
-  }
-  .social-link:hover {
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out, 0.5s !important;
+}
+
+.social-link:hover {
     color: #fff !important;
     /* padding: .5rem !important;
     padding-left: .75rem !important;
     padding-right: .75rem !important;
     border-radius: 1rem !important; */
-    box-shadow: inset 200px 0 0 0 var(--secondary) !important;;
-  }
-  
-  /* Presentational styles */
-  .social-link {
+    box-shadow: inset 200px 0 0 0 var(--secondary) !important;
+    ;
+}
+
+/* Presentational styles */
+.social-link {
     color: var(--primary) !important;
     font-family: 'Poppins', sans-serif !important;
     font-weight: 500 !important;
     line-height: 1.5 !important;
     text-decoration: none !important;
-  }
-  
+}
+
 
 /*** Project Portfolio ***/
 
@@ -531,10 +572,12 @@ table .py-5{
     background-color: #7f00ff !important;
 }
 
-.portfolio-item img, video {
+.portfolio-item img,
+video {
     transition: .5s ease-in-out;
 }
-.portfolio-item img{
+
+.portfolio-item img {
     transition: .5s;
     position: relative;
     display: flex;
@@ -542,13 +585,16 @@ table .py-5{
     height: 100%;
     transition: .5s;
 }
-.portfolio-item,  video {
+
+.portfolio-item,
+video {
     transition: .5s;
     position: relative;
     display: flex;
     width: 100%;
     transition: .5s;
 }
+
 /* .review-item img, video {
     transition: .5s;
     position: relative;
@@ -574,11 +620,13 @@ table .py-5{
     transition: .5s;
     opacity: 0;
 }
-.review-item  {
+
+.review-item {
     padding-left: 5%;
     padding-right: 5%;
-  display: inline-block;  
+    display: inline-block;
 }
+
 .portfolio-item:hover .portfolio-overlay {
     opacity: 1;
 }
