@@ -9,7 +9,7 @@ body {
     --primary: #7f00ff;
     --secondary: #e100ff;
     --light: #F6F4F9;
-    --dark: #000;
+    --dark: #1b1b1b;
 }
 
 p,
@@ -257,12 +257,26 @@ h6,
         background-color: var(--light);
         box-shadow: rgba(225, 0, 255, 0.425) 0px 0px 12px !important;
     }
+    .navbar-light .btn:hover{
+        color: var(--light);
+        background-color: #e100ff;
+        box-shadow: rgba(0, 0, 0, 0.409) 0px 0px 15px !important;
+        transform: scale(1.05);
+        padding-left: 20px !important;
+    }
 
     .sticky-top.navbar-light .btn {
         color: var(--light);
         border: 0;
         background: rgb(225, 0, 255);
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        transition: .5s;
+    }
+    .sticky-top.navbar-light .btn:hover{
+        background-color: #3a0ba7;
+        box-shadow: rgba(0, 0, 0, 0.409) 0px 0px 15px !important;
+        transform: scale(1.05);
+        padding-left: 20px !important;
+
     }
 }
 
@@ -270,7 +284,8 @@ h6,
 /*** Hero Header ***/
 .hero-header {
     margin-bottom: 6rem;
-    padding: 18rem 0;
+    padding-top: 11rem;
+    padding-bottom: 18rem;
     background:
         url(../img/blob-top-left.png),
         url(../img/blob-top-right.png),
@@ -283,7 +298,7 @@ h6,
         right 0px top 0px,
         left 0px bottom 0px,
         right 0px bottom 0px,
-        center center,
+        center top,
         center bottom;
     background-repeat: no-repeat;
 }
