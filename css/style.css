@@ -793,3 +793,6 @@ video {
 .footer .footer-menu a:hover {
     color: var(--secondary);
 }
+.btn-toolbar{
+    padding-top: 1rem;
+}
