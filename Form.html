@@ -7,10 +7,10 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-    <link rel="shortcut icon" href="img/alpha-white-logO-2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/alpha-white-logo-2.png" type="image/x-icon">
 
     <!-- Favicon -->
-    <link href="img/alpha-white-logO-2.png" rel="icon">
+    <link href="img/alpha-white-logo-2.png" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +52,7 @@
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 justify-content-end">
+            <nav class="navbar navbar-expand-lg navbar-light px-3 py-2 py-lg-2 py-xl-2 py-xxl-3 px-xxl-4 justify-content-end">
                 <div class="container-fluid" style="justify-content:space-between !important">
                     <a class="navbar-brand p-0 m-2" href="index.html"><img src="img/office-logo-ong.png"
                             class="brand-img img-fluid color" alt=""></a>
@@ -62,28 +62,30 @@
                         <span class="fa fa-bars"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto py-0">
+                        <ul class="navbar-nav mx-auto py-xxl-3">
                             <li class="nav-item">
-                                <a href="index.html" class="nav-item nav-link">Home</a>
+                                <a href="index.html" class="nav-item nav-link  px-xxl-2 ">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a href="about.html" class="nav-item nav-link">About</a>
+                                <a href="about.html" class="nav-item nav-link px-xxl-2  ">About</a>
                             </li>
                             <li class="nav-item">
-                                <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+                                <a href="portfolio.html" class="nav-item nav-link px-xxl-2  ">Portfolio</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="service.html">Services</a>
+                                <a class="nav-link px-xxl-2  " href="service.html">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a href="pricing.html" class="nav-item nav-link">Pricing</a>
+                                <a href="contact.html" class="nav-item nav-link px-xxl-2  ">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a href="blog.html" class="nav-item nav-link">Blog</a>
+                                <a href="Form.html" class="nav-item nav-link px-xxl-2  active ">Order Now</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="blog.html" class="nav-item nav-link px-xxl-2  ">Blog</a>
                             </li>
                         </ul>
-                        <a href="contact.html" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block active">Get a
-                            Quote</a>
+                        <a href="pricing.html" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Check Pricing</a>
                     </div>
                 </div>
             </nav>
@@ -107,309 +109,454 @@
 
 
         <!-- Form Start -->
-        <div class="row justify-content-center">
-            <form class="col-sm-5 col-md-6 col-lg-7 col-xl-8 col-xxl-9">
+        <form class="justify-content-center row px-5" action="https://formsubmit.co/uzaircreates16@gmail.com"
+            method="POST" enctype="multipart/form-data">
+            <div class="row justify-content-center">
                 <p class="section-title text-secondary justify-content-center"><span></span>Order Now<span></span>
                 </p>
                 <h1 class="text-center mt-1 mb-4">Fill the Form with Details</h1>
-                <p class="text-dark text-center mb-5 justify-content-center">Lorem ipsum dolor, sit amet consectetur
-                    adipisicing elit. Maiores vero, eum, dignissimos esse rerum qui quam, at reiciendis autem in illo
+                <p class="text-dark text-center mb-5 justify-content-center col-8">Lorem ipsum dolor, sit amet
+                    consectetur
+                    adipisicing elit. Maiores vero, eum, dignissimos esse rerum qui quam, at reiciendis autem in
+                    illo
                     minus voluptatem nulla. Sint cupiditate rerum quaerat aspernatur beatae!
                 </p>
-                <div class="row g-3 mt-3">
-                    <div class="col">
-                        <div class="form-floating row">
-                            <br>
-                            <br>
-                            <hr class="py-1 px-5">
-                            <p class="text-dark fs-3 pb-0">Items/Packs</p>
-                            <div class="form-check col g-3 py-3">
-                                <input class="form-check-input" name="item" type="checkbox" value="logo" id="logo">
+            </div>
+            
+            <div class="row g-3">
+                <div class="row g-3">
+                    <div class="form-floating row ps-5">
+                        <br>
+                        <br>
+                        <hr class="py-1 px-5 mb-5">
+                        <span class="mt-5">
+                            <p class="text-dark fs-3 pb-0 text-center">Items/Packs With Quantity</p>
+                        </span>
+                        <div class="form-check col g-3 py-3">
+                            <div>
+                                <input required class="input-numb text-center" value="0" name="logo" type="number"
+                                    id="logo">
                                 <label class="form-check-label pb-3" for="logo">
                                     Logo
                                 </label>
-                                <br>
-                                <input class="form-check-input" name="item" type="checkbox" value="banner" id="banner">
+                                <select name="logoQuality" class="p-1 mb-2 rounded ms-2">
+                                    <option value="Select" class="p-1 rounded ms-2">Select Quality</option>
+                                    <option value="basic" class="p-1 rounded ms-2">Basic $25</option>
+                                    <option value="standard" class="p-1 rounded ms-2">Standard $50</option>
+                                    <option value="premium" class="p-1 rounded ms-2">Premium $80</option>
+                                </select>
+                                <select name="logoStyle" class="p-1 mb-2 rounded ms-2">
+                                    <option value="Select" class="p-1 rounded ms-2">Select Style</option>
+                                    <option value="Animated" class="p-1 rounded ms-2">Animated</option>
+                                    <option value="Static" class="p-1 rounded ms-2">Static</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <input required class="input-numb text-center" value="0" name="banner" type="number"
+                                    id="banner">
                                 <label class="form-check-label pb-3" for="banner">
                                     Banner
                                 </label>
-                                <br>
-                                <input class="form-check-input" name="item" type="checkbox" value="overlay"
+                                <select name="bannerQuality" class="p-1 mb-2 rounded ms-2">
+                                    <option value="Select" class="p-1 rounded ms-2">Select Quality</option>
+                                    <option value="basic" class="p-1 rounded ms-2">basic</option>
+                                    <option value="standard" class="p-1 rounded ms-2">standard</option>
+                                    <option value="premium" class="p-1 rounded ms-2">premium</option>
+                                </select>
+                                <select name="bannerStyle" class="p-1 mb-2 rounded ms-2">
+                                    <option value="Select" class="p-1 rounded ms-2">Select Style</option>
+                                    <option value="Animated" class="p-1 rounded ms-2">Animated</option>
+                                    <option value="Static" class="p-1 rounded ms-2">Static</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <input required class="input-numb text-center" value="0" name="overlay" type="number"
                                     id="overlay">
                                 <label class="form-check-label pb-3" for="overlay">
-                                    Overlays Pack
+                                    Overlay
                                 </label>
-                                <br>
-                                <input class="form-check-input" name="item" type="checkbox" value="emote" id="emote">
-                                <label class="form-check-label pb-3" for="emote">
+                                <select name="overlayQuality" class="p-1 mb-2 rounded ms-2">
+                                    <option value="Select" class="p-1 rounded ms-2">Select Quality</option>
+                                    <option value="basic" class="p-1 rounded ms-2">basic</option>
+                                    <option value="standard" class="p-1 rounded ms-2">standard</option>
+                                    <option value="premium" class="p-1 rounded ms-2">premium</option>
+                                </select>
+                                <select name="overlayStyle" class="p-1 mb-2 rounded ms-2">
+                                    <option value="Select" class="p-1 rounded ms-2">Select Style</option>
+                                    <option value="Animated" class="p-1 rounded ms-2">Animated</option>
+                                    <option value="Static" class="p-1 rounded ms-2">Static</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <input required class="input-numb text-center" value="0" name="emote" type="number"
+                                    id="emotes">
+                                <label class="form-check-label pb-3" for="emotes">
                                     Emotes
                                 </label>
-                                <br>
-                                <input class="form-check-input" name="item" type="checkbox" value="badges" id="badge">
-                                <label class="form-check-label pb-3" for="badge">
-                                    Sub Badges
+                                <select name="emoteQuality" class="p-1 mb-2 rounded ms-2">
+                                    <option value="Select" class="p-1 rounded ms-2">Select Quality</option>
+                                    <option value="basic" class="p-1 rounded ms-2">basic</option>
+                                    <option value="standard" class="p-1 rounded ms-2">standard</option>
+                                    <option value="premium" class="p-1 rounded ms-2">premium</option>
+                                </select>
+                                <select name="emoteStyle" class="p-1 mb-2 rounded ms-2">
+                                    <option value="Select" class="p-1 rounded ms-2">Select Style</option>
+                                    <option value="Animated" class="p-1 rounded ms-2">Animated</option>
+                                    <option value="Static" class="p-1 rounded ms-2">Static</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <input required class="input-numb text-center" value="0" name="badge" type="number"
+                                    id="badges">
+                                <label class="form-check-label pb-3" for="badges">
+                                    Badges
                                 </label>
-                                <br>
-                                <input class="form-check-input" name="item" type="checkbox" value="intro" id="intro">
+                                <select name="badgeQuality" class="p-1 mb-2 rounded ms-2">
+                                    <option value="Select" class="p-1 rounded ms-2">Select Quality</option>
+                                    <option value="basic" class="p-1 rounded ms-2">basic</option>
+                                    <option value="standard" class="p-1 rounded ms-2">standard</option>
+                                    <option value="premium" class="p-1 rounded ms-2">premium</option>
+                                </select>
+                                <select name="badgeStyle" class="p-1 mb-2 rounded ms-2">
+                                    <option value="Select" class="p-1 rounded ms-2">Select Style</option>
+                                    <option value="Animated" class="p-1 rounded ms-2">Animated</option>
+                                    <option value="Static" class="p-1 rounded ms-2">Static</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <input required class="input-numb text-center" value="0" name="intro" type="number"
+                                    id="intro">
                                 <label class="form-check-label pb-3" for="intro">
                                     Intro
                                 </label>
+                                <select name="introQuality" class="p-1 mb-2 rounded ms-2">
+                                    <option value="Select" class="p-1 rounded ms-2">Select Quality</option>
+                                    <option value="basic" class="p-1 rounded ms-2">basic</option>
+                                    <option value="standard" class="p-1 rounded ms-2">standard</option>
+                                    <option value="premium" class="p-1 rounded ms-2">premium</option>
+                                </select>
+                                <select name="introStyle" class="p-1 mb-2 rounded ms-2">
+                                    <option value="Select" class="p-1 rounded ms-2">Select Style</option>
+                                    <option value="Animated" class="p-1 rounded ms-2">Animated</option>
+                                    <option value="Static" class="p-1 rounded ms-2">Static</option>
+                                </select>
                             </div>
-                            <div class="form-check col g-3 py-3">
-                                <input class="form-check-input" name="item" type="checkbox" value="outro" id="outro">
+                        </div>
+                        <div class="form-check col g-3 py-3">
+                            <div>
+                                <input required class="input-numb text-center" value="0" name="outro" type="number"
+                                    id="outro">
                                 <label class="form-check-label pb-3" for="outro">
                                     Outro
                                 </label>
-                                <br>
-                                <input class="form-check-input" name="item" type="checkbox" value="vtube" id="vtube">
+                                <select name="outroQuality" class="p-1 mb-2 rounded ms-2">
+                                    <option value="Select" class="p-1 rounded ms-2">Select Quality</option>
+                                    <option value="basic" class="p-1 rounded ms-2">basic</option>
+                                    <option value="standard" class="p-1 rounded ms-2">standard</option>
+                                    <option value="premium" class="p-1 rounded ms-2">premium</option>
+                                </select>
+                                <select name="outroStyle" class="p-1 mb-2 rounded ms-2">
+                                    <option value="Select" class="p-1 rounded ms-2">Select Style</option>
+                                    <option value="Animated" class="p-1 rounded ms-2">Animated</option>
+                                    <option value="Static" class="p-1 rounded ms-2">Static</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <input required class="input-numb text-center" value="0" name="brbScreen" type="number"
+                                    id="brb">
+                                <label class="form-check-label pb-3" for="brb">
+                                    Be Right Back
+                                </label>
+                                <select name="brbQuality" class="p-1 mb-2 rounded ms-2">
+                                    <option value="Select" class="p-1 rounded ms-2">Select Quality</option>
+                                    <option value="basic" class="p-1 rounded ms-2">basic</option>
+                                    <option value="standard" class="p-1 rounded ms-2">standard</option>
+                                    <option value="premium" class="p-1 rounded ms-2">premium</option>
+                                </select>
+                                <select name="brbStyle" class="p-1 mb-2 rounded ms-2">
+                                    <option value="Select" class="p-1 rounded ms-2">Select Style</option>
+                                    <option value="Animated" class="p-1 rounded ms-2">Animated</option>
+                                    <option value="Static" class="p-1 rounded ms-2">Static</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <input required class="input-numb text-center" value="0" name="vtube" type="number"
+                                    id="vtube">
                                 <label class="form-check-label pb-3" for="vtube">
                                     Vtube Model
                                 </label>
-                                <br>
-                                <input class="form-check-input" name="item" type="checkbox" value="basic-pack"
-                                    id="Bpack">
-                                <label class="form-check-label pb-3" for="Bpack">
+                                <select name="vtubeQuality" class="p-1 mb-2 rounded ms-2">
+                                    <option value="Select" class="p-1 rounded ms-2">Select Quality</option>
+                                    <option value="basic" class="p-1 rounded ms-2">basic</option>
+                                    <option value="standard" class="p-1 rounded ms-2">standard</option>
+                                    <option value="premium" class="p-1 rounded ms-2">premium</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <input required class="input-numb text-center" value="0" name="basic" type="number"
+                                    id="basic-pack">
+                                <label class="form-check-label pb-3" for="basic-pack">
                                     Basic Pack
                                 </label>
-                                <br>
-                                <input class="form-check-input" name="item" type="checkbox" value="std-pack"
+                                <select name="basicStyle" class="p-1 mb-2 rounded ms-2">
+                                    <option value="Select" class="p-1 rounded ms-2">Select Style</option>
+                                    <option value="Animated" class="p-1 rounded ms-2">Animated</option>
+                                    <option value="Static" class="p-1 rounded ms-2">Static</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <input required class="input-numb text-center" value="0" name="standard" type="number"
                                     id="Stpack">
                                 <label class="form-check-label pb-3" for="Stpack">
                                     Standard Pack
                                 </label>
-                                <br>
-                                <input class="form-check-input" name="item" type="checkbox" value="pr-pack" id="PrPack">
-                                <label class="form-check-label pb-3" for="PrPack">
+                                <select name="standardStyle" class="p-1 mb-2 rounded ms-2">
+                                    <option value="Select" class="p-1 rounded ms-2">Select Style</option>
+                                    <option value="Animated" class="p-1 rounded ms-2">Animated</option>
+                                    <option value="Static" class="p-1 rounded ms-2">Static</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <input required class="input-numb text-center" value="0" name="premium" type="number"
+                                    id="premiumPack">
+                                <label class="form-check-label pb-3" for="premiumPack">
                                     Premium Pack
                                 </label>
-                                <br>
-                                <input class="form-check-input" name="item" type="checkbox" value="others" id="others">
-                                <label class="form-check-label pb-3" for="others">
-                                    Others
-                                </label>
+                                <select name="premiumStyle" class="p-1 mb-2 rounded ms-2">
+                                    <option value="Select" class="p-1 rounded ms-2">Select Style</option>
+                                    <option value="Animated" class="p-1 rounded ms-2">Animated</option>
+                                    <option value="Static" class="p-1 rounded ms-2">Static</option>
+                                </select>
                             </div>
+
                         </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <br><br>
-                        <hr>
-                        <p class="text-dark fs-3 pb-0">Quality</p>
-                        <div class="form-check row mt-4">
-                            <div class="col position-relative d-block mb-3 me-5">
-                                <label class="form-check-label" for="Bquality">
-                                    Basic Quality
-                                </label>
-                                <input class="form-check-input" type="radio" name="quality" value="Basic" id="Bquality">
-                            </div>
-                            <div class="col position-relative d-block mb-3 me-5">
-                                <label class="form-check-label" for="StQuality">
-                                    Standard Quality
-                                </label>
-                                <input class="form-check-input" type="radio" name="quality" value="Standard"
-                                    id="StQuality">
-                            </div>
-                            <div class="col position-relative d-block mb-5 me-5">
-                                <label class="form-check-label" for="PrQuality">
-                                    Premium Quality
-                                </label>
-                                <input class="form-check-input" type="radio" name="quality" value="Premium"
-                                    id="PrQuality">
-                            </div>
+                        <div class="row justify-content-center">
+                            <h5 class="text-dark text-center mb-5 justify-content-center col-8">
+                                Having difficulty making a decision? Take a look at the <a class="fs-5" href="pricing.html">Pricing</a> to gain a clearer understanding of
+                                the rates.
+                            </h5>
                         </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <br><br>
-                        <hr>
-                        <p class="text-dark fs-3 pb-0">Static/Animated</p>
-                        <div class="form-check row mt-4">
-                            <div class="col position-relative d-block mb-3 me-5">
-                                <label class="form-check-label" for="static">
-                                    Static
-                                </label>
-                                <input class="form-check-input" type="radio" name="quality" value="static" id="static">
-                            </div>
-                            <div class="col position-relative d-block mb-5 me-5">
-                                <label class="form-check-label" for="animated">
-                                    Animated
-                                </label>
-                                <input class="form-check-input" type="radio" name="quality" value="animated"
-                                    id="animated">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row col-12">
-                        <br><br>
-                        <hr>
-                        <p class="text-dark fs-3 pb-0 ">Project Details</p>
-                        <div class="form-floating mt-4 mb-5">
-                            <textarea class="form-control px-4" name="project_details" placeholder="Your Answer"
-                                id="projdetails" style="height: 150px"></textarea>
-                            <label class="px-4" for="projdetails">Your Answer</label>
-                        </div>
-                    </div>
-                    <div class="row col-12">
-                        <br><br>
-                        <hr>
-                        <p class="text-dark fs-3 pb-0 ">Product/Item</p>
-                        <div class="form-floating mt-4 mb-5">
-                            <textarea class="form-control px-4" name="project_details" placeholder="Your Answer"
-                                id="projdetails" style="height: 150px"></textarea>
-                            <label class="px-4" for="projdetails">Your Answer</label>
-                        </div>
-                    </div>
-                    <div class="row g-3">
-                        <br><br><hr>
-                        <p class="text-dark fs-3 pb-0 ">Personal details</p>
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
-                                <label for="name">Your Name</label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-floating">
-                                <input type="email" name="email address" class="form-control" id="email"
-                                    placeholder="Your Email">
-                                <label for="email">Your Email</label>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-floating">
-                                <input type="text" name="subject" class="form-control" id="subject"
-                                    placeholder="Subject">
-                                <label for="subject">Contry/State</label>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-floating">
-                                <input type="text" name="subject" class="form-control" id="subject"
-                                    placeholder="Subject">
-                                <label for="subject">Discord/Twitch ID</label>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="col-6">
-                            <div class="form-floating">
-                                <input type="text" name="subject" class="form-control" id="subject"
-                                    placeholder="Subject">
-                                <label for="subject">Color Theme</label>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="form-floating">
-                                <input type="text" name="subject" class="form-control" id="subject"
-                                    placeholder="Subject">
-                                <label for="subject">Gamer Tag</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <input type="text" name="subject" class="form-control" id="subject"
-                                    placeholder="Subject">
-                                <label for="subject">Style</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <input type="file" name="subject" class="form-control" id="subject"
-                                    placeholder="Reference Image">
-                                <label for="subject" class="form-label">Reference Image</label>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div class="row justify-content-evenly">
-                            <div class="col">
-                                <div class="form-floating">
-                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="form-floating">
-                                    <input type="email" name="email address" class="form-control" id="email"
-                                        placeholder="Your Email">
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject">
-                                <label for="subject">Subject</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control" name="message" placeholder="Leave a message here"
-                                    id="message" style="height: 150px"></textarea>
-                                <label for="message">Message</label>
-                            </div>
-                        </div>-->
-                    <div class="col-12">
-                        <button class="btn btn-primary w-100 py-3" type="submit">Pay Now</button>
                     </div>
                 </div>
-            </form>
-        </div>
-
-
-        <!-- Form End -->
-
-
-        <!-- Footer Start -->
-        <div class="container-xxl bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5 d-flex justify-content-evenly align-items-center">
-                    <div class="col-xxl-3 col-lg-4 col-6 mx-2 mx-lg-0 col-sm-8 text-center">
-                        <div class="justify-content-center align-items-center text-center">
-                            <p class="fs-4 text-white mb-4">Alpha GFX<span></span></p>
-                            <p class="footer-para">
-                                We are an innovative and imaginative design firm that assists content creators in
-                                achieving unprecedented success through our
-                                distinctive
-                                branding expertise.
-                            </p>
-                            <img src="assets/images/footer-reviews-strip.png" alt="">
+                <div class="row g-3">
+                    <br><br>
+                    <hr>
+                    <p class="text-dark fs-3 pb-0 text-center">Project Details</p>
+                    <div class="form-floating col-sm-12 col-6">
+                        <input required class="form-control px-4" name="style" placeholder="Style"
+                            id="projdetails"></input>
+                        <label class="px-4" for="projdetails">Style</label>
+                    </div>
+                    <div class="form-floating col-sm-12 col-6">
+                        <input required class="form-control px-4" name="color" placeholder="Color"
+                            id="projdetails"></input>
+                        <label class="px-4" for="projdetails">Color</label>
+                    </div>
+                    <div class="form-floating mt-4 mb-5">
+                        <textarea required class="form-control px-4" name="projectDetails" placeholder="Your Answer"
+                            id="projdetails" style="height: 150px"></textarea>
+                        <label class="px-4" for="projdetails">Your Answer</label>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <br><br>
+                    <hr>
+                    <p class="text-dark fs-3 pb-0 text-center ">Product/Item</p>
+                    <div class="form-floating mt-4 mb-5">
+                        <textarea required class="form-control px-4" name="productItem" placeholder="Your Answer"
+                            id="projdetails" style="height: 150px"></textarea>
+                        <label class="px-4" for="projdetails">Your Answer</label>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <br><br>
+                    <hr>
+                    <p class="text-dark fs-3 pb-0 text-center ">Personal details</p>
+                    <div class="col-sm-12 col-6 col-lg-4 py-2">
+                        <div class="form-floating">
+                            <input required name="name" type="text" class="form-control" id="name"
+                                placeholder="Your Name">
+                            <label for="name">Your Name</label>
                         </div>
                     </div>
-                    <div
-                        class="col-xxl-3 col-lg-4 col-6 mx-2 mx-lg-0 col-sm-8 text-center justify-content-center align-items-center">
-                        <p class="fs-4 text-white mb-4">Connect<span></span></p>
-                        <p><i class="fa fa-brands fa-discord me-3"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                        <div class="d-flex justify-content-center pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <div class="col-sm-12 col-6 col-lg-4 py-2">
+                        <div class="form-floating">
+                            <input required type="email" name="emailAddress" class="form-control" id="email"
+                                placeholder="Your Email">
+                            <label for="email">Your Email</label>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-lg-4 col-6 mx-2 mx-lg-0 col-sm-8 text-center justify-content-center">
-                        <p class="fs-4 text-white mb-4">Quick Link</p>
-                        <div class="justify-content-center text-center">
-                            <a class="d-block text-white mb-2" href="about.html">About Us</a>
-                            <a class="d-block text-white mb-2" href="service.html">Services</a>
-                            <a class="d-block text-white mb-2" href="testimonial.html">Testimonials</a>
-                            <a class="d-block text-white mb-2" href="">Portfolio</a>
+                    <div class="col-sm-12 col-6 col-lg-4 py-2">
+                        <div class="form-floating">
+                            <input required type="text" name="country" class="form-control" id="Country/State"
+                                placeholder="Country/State">
+                            <label for="Country/State">Contry/State</label>
                         </div>
                     </div>
+                    <div class="col-sm-12 col-6 col-lg-4 py-2">
+                        <div class="form-floating">
+                            <input required type="text" name="discord" class="form-control" id="Discord"
+                                placeholder="Discord">
+                            <label for="Discord">Discord ID</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-6 col-lg-4 py-2">
+                        <div class="form-floating">
+                            <input required type="text" name="twitch" class="form-control" id="Twitch"
+                                placeholder="Twitch">
+                            <label for="Twitch">Twitch ID</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-6 col-lg-4 py-2">
+                        <div class="form-floating mb-5">
+                            <input required type="text" name="gamerTag" class="form-control" id="GamerTag"
+                                placeholder="GamerTag">
+                            <label for="GamerTag">Gamer Tag</label>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row g-3">
+                    <br><br>
+                    <hr>
+                    <p class="text-dark fs-3 pb-0 text-center ">Reference Image</p>
+                    <div class="col-12 pb-5">
+                        <div class="form-floating mb-3">
+                            <input required class="form-control py-3" type="file" name="attachment"
+                                accept="image/png, image/jpeg">
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <div class="col-12 mb-5 formsbmtbtn">
+                    <button class="btn btn-primary w-100 py-3 mb-5" type="submit">Get invoice</button>
+                    <div class="form-check">
+                        <input required class="form-check-input" type="checkbox" name="TAC" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Agree to <a href="pp.html" target="_blank">Terms And Conditions</a>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <hr class="py-1 px-5 mt-5">
+                </div>
+        </form>
+    </div>
+
+
+    <!-- Form End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-xxl bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5 px-lg-5">
+            <div class="row g-5 d-flex justify-content-evenly align-items-start">
+                
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase mb-2 fw-bold">Short Intro</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: var(--secondary); height: 3px; opacity: 1 !important;" />
+                    <p>
+
+                        Elevate your stream with our high-quality Twitch/Other graphics to make your stream glow.
+                        Empowering streamers with engaging
+                        designs for a captivating online presence.
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase mb-2 fw-bold">Check</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: var(--secondary); height: 3px; opacity: 1 !important;" />
+                    <p>
+                        <a href="portfolio.html" class="text-white">Portfolio</a>
+                    </p>
+                    <p>
+                        <a href="pricing.html" class="text-white">Pricing</a>
+                    </p>
+                    <p>
+                        <a href="pp.html#tas" class="text-white pb-2">Terms of Services</a>
+                    </p>
+                    <p>
+                        <a href="pp.html#pp" class="text-white">Privacy policy</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase mb-2 fw-bold">Useful links</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: var(--secondary); height: 3px; opacity: 1 !important;" />
+                    <p>
+                        <a href="contact.html" class="text-white">Contact</a>
+                    </p>
+                    <p>
+                        <a href="about.html" class="text-white">About</a>
+                    </p>
+                    <p>
+                        <a href="service.html" class="text-white">Services</a>
+                    </p>
+                    <p>
+                        <a href="blog.html" style="color: rgb(141, 141, 141);">Our Blog</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase mb-2 fw-bold">Direct Contact</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: var(--secondary); height: 3px; opacity: 1 !important;" />
+                        <p>
+                            <a href="contact.html" class="text-white"><i class="fab fa-discord pe-2"></i> Discord</a>
+                        </p>
+                        <p>
+                            <a href="about.html" class="text-white"><i class="fab fa-behance fa-brands pe-2"></i> Behance</a>
+                        </p>
+                        <p>
+                            <a href="service.html" class="text-white"><i class="fab fa-instagram pe-2"></i> Instagram</a>
+                        </p>
+                        <p>
+                            <a href="service.html" class="text-white"><i class="fa-regular fa-envelope pe-2"></i> Mail</a>
+                        </p>
+                        
                 </div>
             </div>
-            <div class="container px-lg-5">
-                <div class="copyright  d-flex justify-content-center">
-                    <div class="row">
-                        <div class="text-center text-md-start mb-3 mb-md-0">
-                            <p class="border-bottom">&copy; Alpha GFX, All Right Reserved.</p>
-                        </div>
+        </div>
+        <div class="container px-lg-5">
+            <div class="copyright  d-flex justify-content-center">
+                <div class="row">
+                    <div class="text-center text-md-start mb-3 mb-md-0">
+                        <p class="border-bottom">&copy; Alpha GFX, All Right Reserved. <a href="policy.html"
+                                class="pp">Privacy Policy</a></p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Footer End -->
+    </div>
+    <!-- Footer End -->
 
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
     <!-- JavaScript Libraries -->

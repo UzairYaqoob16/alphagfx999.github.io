@@ -123,13 +123,24 @@ h6,
     margin-right: 25px;
     padding: 35px 0;
     font-family: 'Jost', sans-serif;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 500;
     color: var(--light) !important;
     outline: none;
     transition: .5s;
 }
-
+@media(min-width:1600px){
+    .navbar-light.navbar-nav.nav-link{
+        font-size: 5rem !important;
+    }
+}
+.pp{
+    color: #e946ff !important;
+    transition: .3s;
+}
+.pp:hover{
+    color: #6c2ff8 !important;
+}
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
     color: var(--dark) !important;
@@ -158,7 +169,17 @@ h6,
     filter: grayscale(0) brightness();
     max-height: 45px;
 }
-
+@media(min-width:1441px){
+    .navbar-brand img{
+        min-width: 60px;
+        width: 60px;
+        max-width: 100px;
+        
+        min-height: 60px;
+        height: 60px;
+        max-height: 100px
+            }
+}
 @keyframes drifting {
     0% {
         transform: translateY(5px);
@@ -257,7 +278,8 @@ h6,
         background-color: var(--light);
         box-shadow: rgba(225, 0, 255, 0.425) 0px 0px 12px !important;
     }
-    .navbar-light .btn:hover{
+
+    .navbar-light .btn:hover {
         color: var(--light);
         background-color: #e100ff;
         box-shadow: rgba(0, 0, 0, 0.409) 0px 0px 15px !important;
@@ -271,7 +293,8 @@ h6,
         background: rgb(225, 0, 255);
         transition: .5s;
     }
-    .sticky-top.navbar-light .btn:hover{
+
+    .sticky-top.navbar-light .btn:hover {
         background-color: #3a0ba7;
         box-shadow: rgba(0, 0, 0, 0.409) 0px 0px 15px !important;
         transform: scale(1.05);
@@ -282,6 +305,7 @@ h6,
 
 
 /*** Hero Header ***/
+
 .hero-header {
     margin-bottom: 6rem;
     padding-top: 11rem;
@@ -301,6 +325,7 @@ h6,
         center top,
         center bottom;
     background-repeat: no-repeat;
+    background-size: auto, auto, auto, auto, auto, 100%;
 }
 
 @media (max-width: 991.98px) {
@@ -712,7 +737,6 @@ video {
     background: var(--primary);
 }
 
-
 /*** Footer ***/
 .footer {
     margin-top: 6rem;
@@ -724,12 +748,13 @@ video {
         center top,
         center center;
     background-repeat: no-repeat;
+    background-size: 100%, auto;
 }
 
 .footer .btn.btn-social {
     margin-right: 5px;
-    width: 40px;
-    height: 40px;
+    width: fit-content;
+    height: fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -738,9 +763,39 @@ video {
     border-radius: 40px;
     transition: .3s;
 }
+.input-numb{
+    width: 2rem;
+    height: 2rem;
+    padding: .25rem;
+    border-radius: 7px;
+    transition: .3s;
+    outline: none;
+    font-weight: 500;
+    color:#6c2ff8;
+    border: 1px solid;
+    border-color:#6c2ff8;
+}
+.input-numb:active, .input-numb:focus{
+    background:#6c2ff8 !important;
+    color: #DDDDDD;
+    outline: none;
+    border-color:#6c2ff8;
+    border: 1px solid;
 
-.footer .btn.btn-social:hover {
+}
+.footer .btn.btn-social:hover{
     color: var(--primary);
+}
+select{
+    white-space: nowrap;
+    padding: .25rem;
+    border-radius: 7px;
+    transition: .3s;
+    outline: none;
+    font-weight: 500;
+    color: slategrey ;
+    border: 1px solid;
+    border-color: slategrey ;
 }
 
 .footer .btn.btn-link {
@@ -793,6 +848,7 @@ video {
 .footer .footer-menu a:hover {
     color: var(--secondary);
 }
-.btn-toolbar{
+
+.btn-toolbar {
     padding-top: 1rem;
 }

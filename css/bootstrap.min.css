@@ -4,7 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- :root {
+:root {
     --bs-blue: #0d6efd;
     --bs-indigo: #6610f2;
     --bs-purple: #9552F2;
@@ -99,25 +99,11 @@ h1,
     font-size: calc(1.375rem + 1.5vw)
 }
 
-@media (min-width: 1200px) {
 
-    h1,
-    .h1 {
-        font-size: 2.5rem
-    }
-}
 
 h2,
 .h2 {
     font-size: calc(1.325rem + .9vw)
-}
-
-@media (min-width: 1200px) {
-
-    h2,
-    .h2 {
-        font-size: 2rem
-    }
 }
 
 h3,
@@ -126,33 +112,36 @@ h3,
     color: white;
 }
 
-@media (min-width: 1200px) {
-
-    h3,
-    .h3 {
-        font-size: 1.75rem
-    }
-}
 
 h4,
 .h4 {
     font-size: calc(1.275rem + .3vw)
 }
 
-@media (min-width: 1200px) {
-
-    h4,
-    .h4 {
-        font-size: 1.5rem
-    }
-}
 
 .fw-medium,
 h5,
 h6 {
     font-weight: 500 !important
 }
-
+@media (min-width: 1200px) {
+    h1,
+    .h1 {
+        font-size: 6vw !important
+    }
+    h2,
+    .h2 {
+        font-size: 4vw !important
+    }
+    h3,
+    .h3 {
+        font-size: 2.5vw !important
+    }
+    h4,
+    .h4 {
+        font-size: 2.5vw !important
+    }
+}
 .service-item h5,
 .service-item p {
     transition: .5s
@@ -657,22 +646,25 @@ progress {
 .container-xl,
 .container-xxl {
     overflow-x: hidden !important;
-    overflow-y: hidden;
+    overflow-y: hidden !important;
     width: 100%;
     padding-right: var(--bs-gutter-x, .75rem);
     padding-left: var(--bs-gutter-x, .75rem);
     margin-right: auto;
     margin-left: auto
 }
+
 @media (max-width: 576px) {
-    th{
+    th {
         font-size: 0.5rem;
     }
 }
+
 @media (min-width: 576px) {
-    th{
+    th {
         font-size: 0.5rem;
     }
+
     .container,
     .container-sm {
         max-width: 540px
@@ -680,9 +672,10 @@ progress {
 }
 
 @media (min-width: 768px) {
-    th{
+    th {
         font-size: 1rem;
     }
+
     .container,
     .container-sm,
     .container-md {
@@ -713,13 +706,18 @@ progress {
 
 @media (min-width: 1400px) {
 
+    h1,
+    h2 {
+        font-size: 9rem !important;
+    }
+
     .container,
     .container-sm,
     .container-md,
     .container-lg,
     .container-xl,
     .container-xxl {
-        max-width: 1320px
+        max-width: 1920px
     }
 }
 
@@ -2271,7 +2269,7 @@ progress {
     box-shadow: rgba(149, 157, 165, 0.174) 0px 0px 24px;
     border: none;
     border-radius: 7px;
-    transition:0.5s
+    transition: 0.5s
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2586,11 +2584,13 @@ textarea.form-control-lg {
 .form-switch {
     padding-left: 2.5em
 }
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+    -webkit-appearance: none;
 }
+
 /* .col-form-label label{
     position: absolute !important;
     top: 50% !important;
@@ -2602,7 +2602,8 @@ input::-webkit-inner-spin-button {
 } */
 input[type=number] {
     -moz-appearance: textfield !important;
-  }
+}
+
 .form-switch .form-check-input {
     width: 2em;
     margin-left: -2.5em;
@@ -6694,9 +6695,14 @@ fieldset:disabled .btn {
         transition: none
     }
 }
-a, p, li, button:focus{
+
+a,
+p,
+li,
+button:focus {
     outline: none !important;
 }
+
 .carousel-control-prev:hover,
 .carousel-control-prev:focus,
 .carousel-control-next:hover,
@@ -8249,7 +8255,11 @@ a, p, li, button:focus{
 .fs-4 {
     font-size: calc(1.275rem + .3vw) !important
 }
-
+@media(min-width:1441px){
+    .fs-6 {
+        font-size: 2.5rem !important
+    }
+}
 .fs-5 {
     font-size: 1.25rem !important
 }
@@ -12543,19 +12553,19 @@ a, p, li, button:focus{
 
 @media (min-width: 1200px) {
     .fs-1 {
-        font-size: 2.5rem !important
+        font-size: 2.5vw !important
     }
 
     .fs-2 {
-        font-size: 2rem !important
+        font-size: 2vw !important
     }
 
     .fs-3 {
-        font-size: 1.75rem !important
+        font-size: 1.75vw !important
     }
 
     .fs-4 {
-        font-size: 1.5rem !important
+        font-size: 1.5vw !important
     }
 }
 
@@ -12600,4 +12610,3 @@ a, p, li, button:focus{
         display: none !important
     }
 }
-
