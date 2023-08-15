@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Alpha GFX</title>
+    <title>Alpha GFX - Order Now</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -42,8 +42,6 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
-
-
 </head>
 
 <body>
@@ -52,7 +50,8 @@
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
-            <nav class="navbar navbar-expand-lg navbar-light px-3 py-2 py-lg-2 py-xl-2 py-xxl-3 px-xxl-4 justify-content-end">
+            <nav
+                class="navbar navbar-expand-lg navbar-light px-3 py-2 py-lg-2 py-xl-2 py-xxl-3 px-xxl-4 justify-content-end">
                 <div class="container-fluid" style="justify-content:space-between !important">
                     <a class="navbar-brand p-0 m-2" href="index.html"><img src="img/office-logo-ong.png"
                             class="brand-img img-fluid color" alt=""></a>
@@ -85,7 +84,8 @@
                                 <a href="blog.html" class="nav-item nav-link px-xxl-2  ">Blog</a>
                             </li>
                         </ul>
-                        <a href="pricing.html" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Check Pricing</a>
+                        <a href="pricing.html" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Check
+                            Pricing</a>
                     </div>
                 </div>
             </nav>
@@ -110,7 +110,7 @@
 
         <!-- Form Start -->
         <form class="justify-content-center row px-5" action="https://formsubmit.co/uzaircreates16@gmail.com"
-            method="POST" enctype="multipart/form-data">
+            method="POST" id="orderForm">
             <div class="row justify-content-center">
                 <p class="section-title text-secondary justify-content-center"><span></span>Order Now<span></span>
                 </p>
@@ -122,7 +122,7 @@
                     minus voluptatem nulla. Sint cupiditate rerum quaerat aspernatur beatae!
                 </p>
             </div>
-            
+
             <div class="row g-3">
                 <div class="row g-3">
                     <div class="form-floating row ps-5">
@@ -141,9 +141,9 @@
                                 </label>
                                 <select name="logoQuality" class="p-1 mb-2 rounded ms-2">
                                     <option value="Select" class="p-1 rounded ms-2">Select Quality</option>
-                                    <option value="basic" class="p-1 rounded ms-2">Basic $25</option>
-                                    <option value="standard" class="p-1 rounded ms-2">Standard $50</option>
-                                    <option value="premium" class="p-1 rounded ms-2">Premium $80</option>
+                                    <option value="basic" class="p-1 rounded ms-2">Basic</option>
+                                    <option value="standard" class="p-1 rounded ms-2">Standard</option>
+                                    <option value="premium" class="p-1 rounded ms-2">Premium</option>
                                 </select>
                                 <select name="logoStyle" class="p-1 mb-2 rounded ms-2">
                                     <option value="Select" class="p-1 rounded ms-2">Select Style</option>
@@ -240,11 +240,6 @@
                                     <option value="standard" class="p-1 rounded ms-2">standard</option>
                                     <option value="premium" class="p-1 rounded ms-2">premium</option>
                                 </select>
-                                <select name="introStyle" class="p-1 mb-2 rounded ms-2">
-                                    <option value="Select" class="p-1 rounded ms-2">Select Style</option>
-                                    <option value="Animated" class="p-1 rounded ms-2">Animated</option>
-                                    <option value="Static" class="p-1 rounded ms-2">Static</option>
-                                </select>
                             </div>
                         </div>
                         <div class="form-check col g-3 py-3">
@@ -260,11 +255,6 @@
                                     <option value="standard" class="p-1 rounded ms-2">standard</option>
                                     <option value="premium" class="p-1 rounded ms-2">premium</option>
                                 </select>
-                                <select name="outroStyle" class="p-1 mb-2 rounded ms-2">
-                                    <option value="Select" class="p-1 rounded ms-2">Select Style</option>
-                                    <option value="Animated" class="p-1 rounded ms-2">Animated</option>
-                                    <option value="Static" class="p-1 rounded ms-2">Static</option>
-                                </select>
                             </div>
                             <br>
                             <div>
@@ -278,11 +268,6 @@
                                     <option value="basic" class="p-1 rounded ms-2">basic</option>
                                     <option value="standard" class="p-1 rounded ms-2">standard</option>
                                     <option value="premium" class="p-1 rounded ms-2">premium</option>
-                                </select>
-                                <select name="brbStyle" class="p-1 mb-2 rounded ms-2">
-                                    <option value="Select" class="p-1 rounded ms-2">Select Style</option>
-                                    <option value="Animated" class="p-1 rounded ms-2">Animated</option>
-                                    <option value="Static" class="p-1 rounded ms-2">Static</option>
                                 </select>
                             </div>
                             <br>
@@ -301,8 +286,8 @@
                             </div>
                             <br>
                             <div>
-                                <input required class="input-numb text-center" value="0" name="basic" type="number"
-                                    id="basic-pack">
+                                <input required class="input-numb text-center" name="basic"
+                                    type="number" value="0" id="basic-pack">
                                 <label class="form-check-label pb-3" for="basic-pack">
                                     Basic Pack
                                 </label>
@@ -314,8 +299,8 @@
                             </div>
                             <br>
                             <div>
-                                <input required class="input-numb text-center" value="0" name="standard" type="number"
-                                    id="Stpack">
+                                <input required class="input-numb text-center" name="standard"
+                                    type="number" value="0" id="Stpack">
                                 <label class="form-check-label pb-3" for="Stpack">
                                     Standard Pack
                                 </label>
@@ -327,8 +312,8 @@
                             </div>
                             <br>
                             <div>
-                                <input required class="input-numb text-center" value="0" name="premium" type="number"
-                                    id="premiumPack">
+                                <input required class="input-numb text-center" name="premium"
+                                    type="number" value="0" id="premiumPack">
                                 <label class="form-check-label pb-3" for="premiumPack">
                                     Premium Pack
                                 </label>
@@ -340,9 +325,13 @@
                             </div>
 
                         </div>
+                        <div class="row justify-content-start" id="itemPriceDiv">
+                            
+                        </div>
                         <div class="row justify-content-center">
                             <h5 class="text-dark text-center mb-5 justify-content-center col-8">
-                                Having difficulty making a decision? Take a look at the <a class="fs-5" href="pricing.html">Pricing</a> to gain a clearer understanding of
+                                Having difficulty making a decision? Take a look at the <a class="fs-5"
+                                    href="pricing.html">Pricing</a> to gain a clearer understanding of
                                 the rates.
                             </h5>
                         </div>
@@ -437,8 +426,9 @@
                         </div>
                     </div>
                 </div>
-                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_template" value="table">    
                 <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="New Form Submitted">
                 <div class="col-12 mb-5 formsbmtbtn">
                     <button class="btn btn-primary w-100 py-3 mb-5" type="submit">Get invoice</button>
                     <div class="form-check">
@@ -452,6 +442,8 @@
                     <hr class="py-1 px-5 mt-5">
                 </div>
         </form>
+
+        
     </div>
 
 
@@ -462,8 +454,8 @@
     <div class="container-xxl bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5 px-lg-5">
             <div class="row g-5 d-flex justify-content-evenly align-items-start">
-                
-                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                <div class="col-10 col-xxl-3 col-lg-4 col-xl-3 mx-auto mb-4">
                     <!-- Content -->
                     <h6 class="text-uppercase mb-2 fw-bold">Short Intro</h6>
                     <hr class="mb-4 mt-0 d-inline-block mx-auto"
@@ -478,40 +470,40 @@
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <div class="col-10 col-xxl-3 col-lg-2 col-xl-2 mx-auto mb-4">
                     <!-- Links -->
                     <h6 class="text-uppercase mb-2 fw-bold">Check</h6>
                     <hr class="mb-4 mt-0 d-inline-block mx-auto"
                         style="width: 60px; background-color: var(--secondary); height: 3px; opacity: 1 !important;" />
                     <p>
-                        <a href="portfolio.html" class="text-white">Portfolio</a>
+                        <a href="portfolio.html" class="text-white fl">Portfolio <i class="fa-solid fa-arrow-up-right-from-square fi"></i></a>
                     </p>
                     <p>
-                        <a href="pricing.html" class="text-white">Pricing</a>
+                        <a href="pricing.html" class="text-white fl">Pricing <i class="fa-solid fa-arrow-up-right-from-square fi"></i></a>
                     </p>
                     <p>
-                        <a href="pp.html#tas" class="text-white pb-2">Terms of Services</a>
+                        <a href="pp.html#tas" class="text-white pb-2 fl">Terms of Services <i class="fa-solid fa-arrow-up-right-from-square fi"></i></a>
                     </p>
                     <p>
-                        <a href="pp.html#pp" class="text-white">Privacy policy</a>
+                        <a href="pp.html#pp" class="text-white fl">Privacy policy <i class="fa-solid fa-arrow-up-right-from-square fi"></i></a>
                     </p>
                 </div>
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <div class="col-10 col-xxl-3 col-lg-2 col-xl-2 mx-auto mb-4">
                     <!-- Links -->
                     <h6 class="text-uppercase mb-2 fw-bold">Useful links</h6>
                     <hr class="mb-4 mt-0 d-inline-block mx-auto"
                         style="width: 60px; background-color: var(--secondary); height: 3px; opacity: 1 !important;" />
                     <p>
-                        <a href="contact.html" class="text-white">Contact</a>
+                        <a href="contact.html" class="text-white fl">Contact <i class="fa-solid fa-arrow-up-right-from-square fi"></i></a>
                     </p>
                     <p>
-                        <a href="about.html" class="text-white">About</a>
+                        <a href="about.html" class="text-white fl">About <i class="fa-solid fa-arrow-up-right-from-square fi"></i></a>
                     </p>
                     <p>
-                        <a href="service.html" class="text-white">Services</a>
+                        <a href="service.html" class="text-white fl">Services <i class="fa-solid fa-arrow-up-right-from-square fi"></i></a>
                     </p>
                     <p>
                         <a href="blog.html" style="color: rgb(141, 141, 141);">Our Blog</a>
@@ -520,24 +512,28 @@
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <div class="col-10 col-xxl-3 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                     <!-- Links -->
-                    <h6 class="text-uppercase mb-2 fw-bold">Direct Contact</h6>
+                    <h6 class="text-uppercase mb-2 fw-bold fl">Direct Contact</h6>
                     <hr class="mb-4 mt-0 d-inline-block mx-auto"
                         style="width: 60px; background-color: var(--secondary); height: 3px; opacity: 1 !important;" />
-                        <p>
-                            <a href="contact.html" class="text-white"><i class="fab fa-discord pe-2"></i> Discord</a>
-                        </p>
-                        <p>
-                            <a href="about.html" class="text-white"><i class="fab fa-behance fa-brands pe-2"></i> Behance</a>
-                        </p>
-                        <p>
-                            <a href="service.html" class="text-white"><i class="fab fa-instagram pe-2"></i> Instagram</a>
-                        </p>
-                        <p>
-                            <a href="service.html" class="text-white"><i class="fa-regular fa-envelope pe-2"></i> Mail</a>
-                        </p>
-                        
+                    <p>
+                        <a target="_blank" href="https://discord.gg/EMuDmwkt" class="text-white fl"><i
+                                class="fab fa-discord pe-2"></i> Discord <i class="fa-solid fa-arrow-up-right-from-square fi"></i></a>
+                    </p>
+                    <p>
+                        <a target="_blank" href="https://www.behance.net/alphagraphics999" class="text-white fl"><i
+                                class="fab fa-behance fa-brands pe-2"></i> Behance <i class="fa-solid fa-arrow-up-right-from-square fi"></i></a>
+                    </p>
+                    <p>
+                        <a target="_blank" href="https://www.instagram.com/agfx999/" class="text-white fl"><i
+                                class="fab fa-instagram pe-2"></i> Instagram <i class="fa-solid fa-arrow-up-right-from-square fi"></i></a>
+                    </p>
+                    <p>
+                        <a target="_blank" href="mailto:agfx999@gmail.com" class="text-white fl"><i
+                                class="fa-regular fa-envelope pe-2"></i> Mail <i class="fa-solid fa-arrow-up-right-from-square fi"></i></a>
+                    </p>
+
                 </div>
             </div>
         </div>
@@ -545,8 +541,8 @@
             <div class="copyright  d-flex justify-content-center">
                 <div class="row">
                     <div class="text-center text-md-start mb-3 mb-md-0">
-                        <p class="border-bottom">&copy; Alpha GFX, All Right Reserved. <a href="policy.html"
-                                class="pp">Privacy Policy</a></p>
+                        <p class="fw-light">&copy; Alpha GFX, All Right Reserved. <a href="pp.html"
+                                class="pp">Privacy Policy</a> | <a class="pp" href="pp.html#tas">Terms of Use</a></p>
                     </div>
                 </div>
             </div>

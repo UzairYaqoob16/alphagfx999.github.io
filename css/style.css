@@ -779,12 +779,25 @@ video {
     background:#6c2ff8 !important;
     color: #DDDDDD;
     outline: none;
-    border-color:#6c2ff8;
+    border-color:#ae57ff;
     border: 1px solid;
 
 }
 .footer .btn.btn-social:hover{
     color: var(--primary);
+}
+.fl{
+    color: var(--light) !important;
+    transition: .3s;
+}
+.fl:hover{
+    color: #906cdd !important;
+}
+.fi{
+    display: none;
+}
+.fl:hover .fi{
+    display: inline-block;
 }
 select{
     white-space: nowrap;
